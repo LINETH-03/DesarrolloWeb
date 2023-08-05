@@ -27,15 +27,31 @@ a{
 }
 .contenedor.active{
     grid-template-columns: 300px auto;
-    
 
 
+/*-----------------------header------------------------------*/
 }
 .header{
     grid-area: header;
-    background: #fff;
-}
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 20px;
+    grid-template-areas: "logo busqueda iconos";
 
+}
+.contenedor-logo{
+    grid-area: logo;
+}
+.barra-busqueda{
+    grid-area: busqueda;
+}
+.botones-header{
+    grid-area: iconos;
+}
+/*-----------------------menu lateral------------------------------*/
 .menu-lateral{
     grid-area: menu;
     background: #ccc;
