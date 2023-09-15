@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+
+<h2>The indexOf() Method</h2>
+<p>The position of the first occurrence of "locate" is:</p>
+<p id="demo1"></p>
+
+<p>Both indexOf() and lastIndexOf() return -1 if the text is not found:</p>
+<p id="demo2"></p>
+
+<h2>The lastIndexOf() Method</h2>
+<p>The position of the last occurrence of "locate" is:</p>
+<p id="demo3"></p>
+
+<p>The lastIndexOf() method accepts a second parameter as the starting position for the search:</p>
+<p id="demo4"></p>
+
+<h2>The search() Method</h2>
+<p>Return the position of the first occurrence of a regular expression:</p>
+<p id="demo5"></p>
+
+<script>
+let text = "Please locate where 'locate' occurs!";
+
+// indexOf() example 1
+let index1 = text.indexOf("locate");
+document.getElementById("demo1").innerHTML = "Result 1: " + index1;
+
+// indexOf() example 2
+let index2 = text.indexOf("John");
+document.getElementById("demo2").innerHTML = "Result 2: " + index2;
+
+// lastIndexOf() example
+let index3 = text.lastIndexOf("locate");
+document.getElementById("demo3").innerHTML = "Result 3: " + index3;
+
+// lastIndexOf() with starting position example
+let index4 = text.lastIndexOf("locate", 15);
+document.getElementById("demo4").innerHTML = "Result 4: " + index4;
+
+// search() example
+let index5 = text.search(/locate/);
+document.getElementById("demo5").innerHTML = "Result 5: " + index5;
+</script>
+
+</body>
+</html>
