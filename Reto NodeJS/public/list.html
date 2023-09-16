@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Contactos</title>
+</head>
+<body>
+    <h1>Lista de Contactos</h1>
+    <ul>
+        <% contacts.forEach(function(contact) { %>
+            <li>
+                Nombre: <%= contact.name %><br>
+                Email: <%= contact.email %><br>
+                <a href="/uploads/<%= contact.dpiFile %>" download>Descargar DPI</a>
+            </li>
+        <% }); %>
+    </ul>
+</body>
+</html>
